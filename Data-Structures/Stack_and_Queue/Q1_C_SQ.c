@@ -256,7 +256,7 @@ int insertNode(LinkedList *ll, int index, int value){
 	// Find the nodes before and at the target position
 	// Create a new node and reconnect the links
 	if ((pre = findNode(ll, index - 1)) != NULL){
-		cur = pre->next;
+		cur = pre->next;		
 		pre->next = malloc(sizeof(ListNode));
 		if (pre->next == NULL)
 		{
